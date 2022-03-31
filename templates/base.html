@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    {% block css %}{%endblock%}
+
+    <title>{% block title %} {%endblock%}</title>
+  </head>
+
+  <body>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-[#017e7e] p-3">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand h3 text-white rounded-full border-2 p-2"
+          href="{{ url_for('home_page') }}"
+          >Zelco</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="ml-auto flex space-x-8 mr-2 text-lg">
+            <a
+              href="profile.html"
+              class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
+              >Profile</a
+            >
+            <a
+              href="#"
+              class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
+              >Covid Tracker</a
+            >
+            <a
+              href="aboutus.html"
+              class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
+              >About Us</a
+            >
+            <a
+              href="index.html"
+              class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
+              >Register / Sign In</a
+            >
+
+            <!-- <a href="#" class="btn btn-outline-primary"> REGISTER / SIGN IN </a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    {%block content%} {% endblock %}
+
+    <!--  Footer starts here-->
+    <footer class="bg-[#017e7e] text-center lg:text-left mt-auto">
+      <div class="container p-6 text-gray-100">
+        <div class="grid lg:grid-cols-2 gap-4">
+          <div class="mb-6 md:mb-0">
+            <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+              atque ea quis molestias. Fugiat pariatur maxime quis culpa
+              corporis vitae repudiandae aliquam voluptatem veniam, est atque
+              cumque eum delectus sint!
+            </p>
+          </div>
+
+          <div class="mb-6 md:mb-0">
+            <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+              atque ea quis molestias. Fugiat pariatur maxime quis culpa
+              corporis vitae repudiandae aliquam voluptatem veniam, est atque
+              cumque eum delectus sint!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center text-white p-4"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2022 Copyright:
+        <a class="text-white" href="">Vaccination Center</a>
+        <!-- iddar page top apne aap jaaneka JS likhna hai if time milega -->
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
