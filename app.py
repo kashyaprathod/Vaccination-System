@@ -18,5 +18,11 @@ def sign_in():
 def profile():
     return render_template('profile.html')
 
+@app.route("/Appointment")
+def appointment():
+    return render_template('appointment.html')
+
+
+
 
 

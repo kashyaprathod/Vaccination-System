@@ -1,0 +1,54 @@
+{% extends 'base.html'%} {% block title %} Book an Appointment {% endblock %}
+{%block content%}
+<div class="bg-gray-50 text-center m-auto">
+  <div class="container justify-center flex p-10 m-auto">
+    <div class="">
+      <div class="block rounded-lg shadow-lg bg-white max-w-md p-10">
+        <h1 class="text-center pb-10 text-3xl font-semibold">
+          Book Your Appointment
+        </h1>
+        <div class="border-2 p-2">
+          <h1 class="text-xl pb-4 font-semibold">
+            Select date for appointment
+          </h1>
+          <form>
+            <div class="border p-1">
+              <input type="date" id="birthday" class="p-1" name="birthday" />
+            </div>
+            <div class="mt-6">
+              <label
+                for="inputZip"
+                class="form-label w-full text-xl font-semibold"
+              >
+                Enter Pin Code</label
+              >
+              <input type="text" class="form-control w-full" id="inputZip" />
+            </div>
+            <div class="col-auto pt-3">
+              <h1 class="form-label w-full text-xl font-semibold mb-1">
+                Vacciantion Dose
+              </h1>
+              <label class="visually-hidden" for="autoSizingSelect"
+                >Vaccination</label
+              >
+              <select class="form-select" id="autoSizingSelect">
+                <option selected>Choose your vaccine</option>
+                <option value="1">Covi-Shield</option>
+                <option value="2">Booster</option>
+              </select>
+              <button
+                class="btn btn-primary mt-4 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 bg-primary"
+                type="button"
+              >
+                Book Appointment
+              </button>
+              <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+{%endblock%}

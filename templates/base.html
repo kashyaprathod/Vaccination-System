@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="ml-auto flex space-x-8 mr-2 text-lg">
             <a
-              href="profile.html"
+              href="{{ url_for('profile') }}"
               class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
               >Profile</a
             >
@@ -49,12 +49,17 @@
               >Covid Tracker</a
             >
             <a
-              href="aboutus.html"
+              href="{{ url_for('appointment') }}"
+              class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
+              >Book an Appointment</a
+            >
+            <a
+              href="{{ url_for('home_page') }}"
               class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
               >About Us</a
             >
             <a
-              href="index.html"
+              href="{{ url_for('sign_in') }}"
               class="rounded-full px-3 py-1 text-lg font-medium text-white hover:text-white border-2 hover:border-yellow-500"
               >Register / Sign In</a
             >
