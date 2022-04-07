@@ -22,6 +22,10 @@ def profile():
 def appointment():
     return render_template('appointment.html')
 
+@app.route("/AboutUs")
+def about_us():
+    return render_template('aboutus.html')
+
 
 
 
